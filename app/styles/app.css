@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700);
+
+/* Typography
+*************/
+
+body {
+  font-family: "Source Sans Pro", "Helvetica Neue", cursive;
+}
+
+.navbar-li {
+  font-weight: 200;
+}
+
+.text-center {
+  font-size: 2em;
+}
+
+.carousel-image {
+  max-height: 400px;
+  width: 100%;
+}
+
+/*.article-img {
+  max-height: 30rem;
+  max-width: 30rem;
+}*/
+
+.col-md-4 {
+    display: flex; /* equal height of the children */
+}
+
+.panel {
+  flex: 1; /* additionally, equal width */
+}
+
+.navbar-brand {
+  font-size: 1.75em;
+  font-weight: 400;
+}

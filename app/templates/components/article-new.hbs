@@ -1,0 +1,19 @@
+{{#if newArticleForm}}
+  <form>
+    <div class='form-group'>
+      <label>Image</label>
+      {{input value=image id='image' class='form-control'}}
+      <label>author</label>
+      {{input value=author id='author' class='form-control'}}
+      <label>text</label>
+      {{textarea value=text id='text' class='form-control'}}
+      <label>title</label>
+      {{input value=title id='title' class='form-control'}}
+    </div>
+    <div class='row text-center'>
+      <a {{action 'articleSave'}} >Save</a>
+    </div>
+  </form>
+{{else}}
+  <a {{action 'newArticle'}} >Add Article</a>
+{{/if}}

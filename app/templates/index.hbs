@@ -1,0 +1,13 @@
+<div class="row">
+  {{carousel-tile model=model}}
+</div>
+<br>
+<br>
+{{article-new articleSave="articleSaveIndex"}}
+<ul>
+  <div class='row'>
+  {{#each model as |article|}}
+    {{article-tile article=article update="update" destroyArticle="destroyArticle"}}
+  {{/each}}
+</div>
+</ul>

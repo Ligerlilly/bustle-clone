@@ -1,0 +1,9 @@
+<h2>{{model.title}}</h2>
+<h3><img src={{model.image}} class="img-thumbnail" alt="image" /></h3>
+<h4>{{model.text}}</h4>
+<p>
+  {{model.author}}
+</p>
+
+{{article-update article=model update="updateArticle"}}
+<button class='btn btn-danger'{{action 'delete' model}}>delete</button>

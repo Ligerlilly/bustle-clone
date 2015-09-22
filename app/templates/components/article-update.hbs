@@ -1,0 +1,19 @@
+{{#if updateArticleForm}}
+  <form>
+    <div class='form-group'>
+      <label>Image</label>
+      {{input value=image id='image' class='form-control' placeholder=model.image}}
+      <label>author</label>
+      {{input value=author id='author' class='form-control' placeholder=model.author}}
+      <label>text</label>
+      {{textarea value=text id='text' class='form-control' placeholder=model.text}}
+      <label>title</label>
+      {{input value=title id='title' class='form-control' placeholder=model.title}}
+    </div>
+    <div class='row text-center'>
+      <button {{action 'update' article}} class='btn btn-success'>Save</button>
+    </div>
+  </form>
+{{else}}
+  <button {{action 'updateArticleForm'}} class='btn btn-info'>Update Article</button>
+{{/if}}

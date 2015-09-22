@@ -1,0 +1,12 @@
+<div class="col-md-4 text-center">
+  <div class="panel panel-default">
+      <div class="panel-heading text-center">
+        <h3>{{article.title}}</h3>
+        <img src={{article.image}} class='article-img img-responsive'>
+      </div>
+      <div class="panel-body">
+        <p class="lead">by {{article.author}}</p>
+        {{#link-to 'article' article.id}}Read More{{/link-to}}
+      </div>
+  </div>
+</div>
